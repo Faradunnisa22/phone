@@ -47,5 +47,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          workflow-token: ${{ secrets.workflow-token }}
           publish_dir: ./dist
